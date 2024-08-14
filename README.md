@@ -1,12 +1,12 @@
 
 # **Toybox-Riot-Mod**
-**Step-by-Step Exploration of Modding the Toybox 3D Printer**
+**Step-by-Step Exploration of Modding the Toybox Alpha V2 3D Printer**
 
 ---
 
 ## **Introduction**
 
-Welcome to the **Toybox-Riot-Mod** project. This repository is a space where we document each step of exploring potential modifications for the Toybox 3D printer. Whether it’s experimenting with firmware changes, testing mechanical mods, or simply trying out new ideas, everything is documented here as we go.
+Welcome to the **Toybox-Riot-Mod** project. This repository is dedicated to documenting the step-by-step exploration of potential modifications for the Toybox Alpha V2 3D printer. While this project focuses specifically on the V2 electronics—featuring an ESP12 controller and an STM32F103—it’s important to note that the V1 and V2 versions of the Toybox Alpha are mechanically the same. This means that most, if not all, mods should be compatible with both versions.
 
 This project combines hands-on 3D printing experience with AI-assisted programming to overcome challenges and bring creative ideas to life. We’re not making promises—just sharing our journey as it unfolds.
 
@@ -22,9 +22,9 @@ This project combines hands-on 3D printing experience with AI-assisted programmi
 
 We are currently in the early stages of exploring:
 
-- **Understanding the Toybox’s limitations:** Identifying what can be improved or modified.
-- **Firmware Exploration:** Looking into options like Klipper to potentially replace the proprietary firmware.
-- **Mechanical Modifications:** Experimenting with small tweaks and seeing how they affect performance.
+- **Understanding the Toybox Alpha V2’s limitations:** Identifying what can be improved or modified in the V2 version, which has different electronics compared to V1.
+- **Firmware Exploration:** Investigating options for replacing the V2 firmware with alternatives like Klipper, focusing on the ESP12 controller and STM32F103.
+- **Mechanical Modifications:** Experimenting with small tweaks and seeing how they affect performance. Since the V1 and V2 are mechanically the same, these mods should be applicable to both versions.
 
 ---
 
@@ -56,8 +56,8 @@ As we make progress, we’ll update the repository with our findings, instructio
 
 ### **Current Exploration**
 
-- **Testing Firmware:** We’re currently experimenting with alternative firmware. Details will be provided as we gather results.
-- **Mechanical Tweaks:** Small adjustments are being tested to see their impact on print quality and speed.
+- **Testing Firmware:** We’re currently experimenting with alternative firmware for the V2 version. Details will be provided as we gather results.
+- **Mechanical Tweaks:** Small adjustments are being tested to see their impact on print quality and speed. These tweaks should work for both the V1 and V2 models.
 
 ---
 

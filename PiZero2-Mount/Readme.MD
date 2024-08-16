@@ -1,102 +1,73 @@
 
-# **Toybox-Riot-Mod**
-**Step-by-Step Exploration of Modding the Toybox Alpha 3D Printer**
+# **Pi Zero 2 Mount for Toybox Alpha V2**
+**Adapting the Pi Zero 2 to the Toybox Alpha V2 3D Printer**
 
 ---
 
 ## **Introduction**
 
-Welcome to the **Toybox-Riot-Mod** project. This repository is dedicated to documenting the step-by-step exploration of potential modifications for the Toybox Alpha 3D printer. Our focus is on understanding the various versions of the Toybox Alpha and implementing modifications that can enhance its capabilities.
+Welcome to the **Pi Zero 2 Mount for Toybox Alpha V2** project. This README provides step-by-step instructions for mounting a Pi Zero 2 into the Toybox Alpha V2 3D printer. This modification reuses the existing OEM mounting holes and utilizes an adapter plate, ensuring a seamless fit without the need for additional modifications to the printer's frame.
 
-This project combines hands-on 3D printing experience with AI-assisted programming to overcome challenges and bring creative ideas to life. We’re not making promises—just sharing our journey as it unfolds.
-
----
-
-## **Versions of the Toybox Alpha**
-
-The Toybox Alpha has three known versions, each with unique features:
-
-1. **Version 1 (V1):**
-   - Identifiable by a 3D printed cover over the SD and USB ports on the front of the frame.
-   - Comes with a Pi V2 board and a motherboard labeled "Super."
-
-2. **Version 2 (V2):**
-   - Features a power button on the front of the unit.
-   - Uses an ESP12 controller and an STM32F103 microcontroller.
-   - Mechanically similar to V1, allowing most modifications to be compatible with both versions.
-
-3. **Version 3 (V3):**
-   - Does not have a power button on the front.
-   - Mechanically the same as V1 and V2, but the electronics may be different.
-   - The details of the V3 electronics are currently unknown as we only have access to V1 and V2.
+Please note that while the Pi Zero 2 can be physically wired and powered over the board's UART, it will not have any communication with the stock board because I have been unable to get the stock board to flash.
 
 ---
 
-## **Current Focus**
+## **Disclaimer**
 
-We are currently in the early stages of exploring:
-
-- **Understanding the Limitations:** Identifying what can be improved or modified in each version of the Toybox Alpha.
-- **Firmware Exploration:** Investigating options for replacing the firmware, focusing on the V2 electronics.
-- **Mechanical Modifications:** Experimenting with small tweaks and seeing how they affect performance across different versions.
+**Proceed with caution:** This modification may void your warranty and could potentially damage your hardware if not done correctly. Ensure you're comfortable with disassembly and reassembly of your printer before attempting this mod.
 
 ---
 
-## **Subfolder Projects**
+## **Materials Required**
 
-### **Pi Zero 2 Mount for Toybox Alpha V2**
-- **Overview:** Replacing the ESP12 board in the Toybox Alpha V2 with a Pi Zero 2.
-- **Details:** Includes steps for removing the display/internal cover, disconnecting the UART wiring, and printing a custom mount.
-- **Link:** [PiZero2-Mount](https://github.com/ProtoRiot/Toybox-Riot-Mod/tree/main/PiZero2-Mount)
-
----
-
-## **Getting Started**
-
-### **Prerequisites**
-
-To follow along with our journey, you may want:
-
-- **Basic Tools:** Screwdrivers, pliers, and other small tools for disassembly and reassembly.
-- **Software:** Access to CAD software (e.g., Fusion 360) and 3D printing software.
-- **3D Printer Filament:** Ensure you have the appropriate filament for any tests.
-
-### **Clone the Repository**
-
-Start by cloning this repository:
-
-```bash
-git clone https://github.com/ProtoRiot/Toybox-Riot-Mod.git
-```
-
-### **Step-by-Step Updates**
-
-As we make progress, we’ll update the repository with our findings, instructions, and any new ideas that emerge. Check back often to see what’s new!
+- **Pi Zero 2**: The central component of this mod.
+- **Adapter Plate**: Custom-designed to fit the Pi Zero 2 using the OEM holes.
+- **M2.5 5mm Screws (4)**: To mount the Pi Zero 2 to the adapter plate.
+- **OEM M3 Screws (4)**: To secure the adapter plate to the base.
+- **Basic Tools**: Screwdrivers and pliers for assembly.
 
 ---
 
-## **Usage**
+## **Step-by-Step Instructions**
 
-### **Current Exploration**
+### **1. Prepare the Printer**
 
-- **Testing Firmware:** We’re currently experimenting with alternative firmware for the V2 version. Details will be provided as we gather results.
-- **Mechanical Tweaks:** Small adjustments are being tested to see their impact on print quality and speed across different versions.
+- **Power Off and Unplug:** Ensure the Toybox Alpha V2 is powered off and unplugged.
+- **Disassemble as Necessary:** Remove the existing ESP12 board by taking off the internal cover and disconnecting any necessary wiring.
 
-### **SKR Pico Integration**
+### **2. Mount the Pi Zero 2 to the Adapter Plate**
 
-The most straightforward route for modding the Toybox Alpha is swapping in an SKR Pico board in place of the OEM board. This allows for ease of use in flashing Klipper and opens up more possibilities for customization and enhancement.
+- **Align the Pi Zero 2:** Position the Pi Zero 2 over the designated holes in the adapter plate.
+- **Secure the Pi Zero 2:** Use the M2.5 5mm screws to attach the Pi Zero 2 to the adapter plate. Ensure the Pi Zero 2 is securely mounted.
+
+### **3. Install the Adapter Plate to the Frame**
+
+- **Align the Adapter Plate:** Position the adapter plate, with the Pi Zero 2 attached, over the OEM mounting holes on the frame.
+- **Secure the Adapter Plate:** Use the OEM M3 screws to secure the adapter plate to the frame. Ensure it is firmly attached without over-tightening.
+
+### **4. Reassemble the Printer**
+
+- **Reconnect Wiring:** Reconnect any wiring that was disconnected during disassembly.
+- **Replace the Internal Cover:** Reattach the internal cover to protect the electronics.
+- **Test the Installation:** Power on the printer to ensure the Pi Zero 2 is functioning correctly within the system.
 
 ---
 
-## **Collaboration and AI Assistance**
+## **Side Note**
 
-This project is driven by a blend of practical experience and AI assistance, allowing us to tackle challenges that come up along the way. The AI plays a key role in helping to brainstorm, troubleshoot, and implement changes as we progress.
+I, **ProtoRiot**, have been unable to get Klipper to flash on the OEM board, which is why the Pi Zero 2 cannot communicate with the stock board. As a result, I am opting to pair the Pi Zero 2 with an SKR Pico instead.
+
+---
+
+## **Conclusion**
+
+This modification allows you to integrate a Pi Zero 2 into your Toybox Alpha V2 3D printer with minimal effort. By reusing the OEM holes and utilizing a custom adapter plate, this mod maintains the integrity of the printer while enhancing its capabilities.
 
 ---
 
 ## **Contributing**
 
-We welcome collaboration! If you’re interested in contributing ideas, testing, or offering feedback, feel free to fork the repository, submit pull requests, or open issues for discussion.
+If you have suggestions or improvements for this mod, feel free to contribute by forking the repository, submitting pull requests, or opening issues.
 
 ---
 
@@ -108,5 +79,4 @@ This project is licensed under the GPL v3.0 License - see the `LICENSE.md` file 
 
 ## **Acknowledgments**
 
-- **AI Assistance:** Thanks to AI for helping to navigate the exploration process and overcome technical challenges.
-- **Community Support:** Gratitude to the 3D printing and maker communities for ongoing inspiration and support.
+- **Community Support:** Thanks to the 3D printing and maker communities for ongoing inspiration and support.

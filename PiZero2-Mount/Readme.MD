@@ -82,6 +82,10 @@ As we make progress, we’ll update the repository with our findings, instructio
 - **Testing Firmware:** We’re currently experimenting with alternative firmware for the V2 version. Details will be provided as we gather results.
 - **Mechanical Tweaks:** Small adjustments are being tested to see their impact on print quality and speed across different versions.
 
+### **SKR Pico Integration**
+
+The most straightforward route for modding the Toybox Alpha is swapping in an SKR Pico board in place of the OEM board. This allows for ease of use in flashing Klipper and opens up more possibilities for customization and enhancement.
+
 ---
 
 ## **Collaboration and AI Assistance**

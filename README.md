@@ -1,12 +1,12 @@
 
 # **Toybox-Riot-Mod**
-**Step-by-Step Exploration of Modding the Toybox Alpha V2 3D Printer**
+**Step-by-Step Exploration of Modding the Toybox Alpha V1 3D Printer**
 
 ---
 
 ## **Introduction**
 
-Welcome to the **Toybox-Riot-Mod** project. This repository is dedicated to documenting the step-by-step exploration of potential modifications for the Toybox Alpha V2 3D printer. While this project focuses specifically on the V2 electronics—featuring an ESP12 controller and an STM32F103—it’s important to note that the V1 and V2 versions of the Toybox Alpha are mechanically the same. This means that most, if not all, mods should be compatible with both versions.
+Welcome to the **Toybox-Riot-Mod** project. This repository is dedicated to documenting the step-by-step exploration of potential modifications for the Toybox Alpha V2 3D printer. While this project focuses specifically on the V1 electronics—featuring an ESP12 controller and an STM32F103—it’s important to note that the V1 and V2 versions of the Toybox Alpha are mechanically the same. This means that most, if not all, mods should be compatible with both versions.
 
 This project combines hands-on 3D printing experience with AI-assisted programming to overcome challenges and bring creative ideas to life. We’re not making promises—just sharing our journey as it unfolds.
 

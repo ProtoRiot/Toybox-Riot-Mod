@@ -22,7 +22,7 @@ This project combines hands-on 3D printing experience with AI-assisted programmi
 
 We are currently in the early stages of exploring:
 
-- **Understanding the Toybox Alpha V2’s limitations:** Identifying what can be improved or modified in the V2 version, which has different electronics compared to V1.
+- **Understanding the Toybox Alpha V1’s limitations:** Identifying what can be improved or modified in the V1 version, which has different electronics compared to V1.
 - **Firmware Exploration:** Investigating options for replacing the V2 firmware with alternatives like Klipper, focusing on the ESP12 controller and STM32F103.
 - **Mechanical Modifications:** Experimenting with small tweaks and seeing how they affect performance. Since the V1 and V2 are mechanically the same, these mods should be applicable to both versions.
 
@@ -56,7 +56,7 @@ As we make progress, we’ll update the repository with our findings, instructio
 
 ### **Current Exploration**
 
-- **Testing Firmware:** We’re currently experimenting with alternative firmware for the V2 version. Details will be provided as we gather results.
+- **Testing Firmware:** We’re currently experimenting with alternative firmware for the V1 version. Details will be provided as we gather results.
 - **Mechanical Tweaks:** Small adjustments are being tested to see their impact on print quality and speed. These tweaks should work for both the V1 and V2 models.
 
 ---
